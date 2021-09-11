@@ -415,7 +415,7 @@
 			Your browser does not support the audio element.
 		</audio>
 		<audio id="myOpening">
-			<source src="somebodyopening.mp3" type="audio/mpeg">
+			<source src="opening.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 		</audio>
 		<div class="preload">PLEASE WAIT</div>
@@ -472,7 +472,7 @@
 				</div>
 				<div class="mybody">
 					<div class="mytitle">
-						Aku suka kamu kaka mentor.
+						Aku sejak lama suka padamu.
 					</div>
 					<div class="mycontent">
 						Maukah kau menjadi orang yang selalu ada disisiku, yang selalu ada disaat senang ataupun susah, yang selalu ada sampai akhir hayatku?
@@ -759,13 +759,13 @@
 				var today = new Date();
 				var h = today.getHours();
 				if(h>23)tulis('malam','seharusnya kamu sudah tidur');
-					else if(h>18)tulis('malam','waktunya mengisi energi');
-					else if(h>17)tulis('petang','selamat menikmati senja');
-					else if(h>14)tulis('sore','selamat menjalani hari');
-					else if(h>13)tulis('siang','tetap semangat')
-					else if(h>9)tulis('siang','selamat bekerja')
-					else if(h>4)tulis('pagi','selamat beraktivitas');
-					else tulis('malam','seharusnya kamu sudah tidur');
+				else if(h>19)tulis('malam','waktunya mengisi energi');
+				else if(h>18)tulis('petang','selamat menikmati senja');
+				else if(h>14)tulis('sore','selamat menjalani hari');
+				else if(h>13)tulis('siang','tetap semangat')
+				else if(h>9)tulis('siang','selamat bekerja')
+				else if(h>4)tulis('pagi','selamat beraktivitas');
+				else tulis('malam','seharusnya kamu sudah tidur');
 				selesai=true;
 			}
 			function resetposisi(){
@@ -798,14 +798,14 @@
 				var t = setTimeout(startTime, 500);
 				mytanggal();
 				if(cari){
-					if(h>23)tulis('malam','seharusnya kamu sudah tidur <3');
-					else if(h>18)tulis('malam','waktunya mengisi energi <3');
-					else if(h>17)tulis('petang','tetap semangat <3);
-					else if(h>14)tulis('sore','tetap semangat <3');
-					else if(h>13)tulis('siang','tetap semangat <3')
-					else if(h>9)tulis('siang','tetap semangat <3')
-					else if(h>4)tulis('pagi','semangat beraktivitas <3');
-					else tulis('malam','mimpi indah <3');
+					if(h>23)tulis('malam','seharusnya kamu sudah tidur');
+					else if(h>18)tulis('malam','waktunya mengisi energi');
+					else if(h>17)tulis('petang','selamat menikmati senja');
+					else if(h>14)tulis('sore','selamat menjalani hari');
+					else if(h>13)tulis('siang','tetap semangat')
+					else if(h>9)tulis('siang','selamat bekerja')
+					else if(h>4)tulis('pagi','selamat beraktivitas');
+					else tulis('malam','seharusnya kamu sudah tidur');
 					if(h>18)     document.querySelector('img').src="wp1.png";
 					else if(h>4) document.querySelector('img').src="wp2.png";
 					else         document.querySelector('img').src="wp1.png";
